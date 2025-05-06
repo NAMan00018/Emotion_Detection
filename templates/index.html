@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Emotion Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Emotion Detection</h1>
+        <p>Enter text to detect emotion</p>
+
+        <form action="/" method="post">
+            <textarea name="raw_text" rows="5" cols="50" placeholder="Type text here...">{{ raw_text if raw_text else '' }}</textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            <h3>Original Text:</h3>
+            <p>{{ raw_text }}</p>
+
+            <h3>Prediction:</h3>
+            <p>{{ prediction }} {{ emoji_icon }}</p>
+            <p>Confidence: {{ confidence * 100 }}%</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
