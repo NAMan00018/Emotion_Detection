@@ -1,76 +1,31 @@
-Emotion Detection Web App – Setup Guide
-This guide will walk you through the steps to clone, set up, train, and run the Emotion Detection application locally.
+# 🎭 Emotion Detection Web Application
 
-✅ Prerequisites
-Python 3.7+
+A Flask-based web app that detects emotions in text using a machine learning model trained on a labeled dataset. This project allows users to input text and receive a predicted emotion such as joy, sadness, anger, etc.
 
-pip (Python package manager)
+---
 
-Git
+## 📁 Project Structure
 
-Basic familiarity with Python and Flask
-
-1. 🔁 Clone the Repository
-Use Git to clone the repository to your local machine:
-
-bash
-Copy
-Edit
-git clone https://github.com/NAMan00018/Emotion_Detection.git
-cd Emotion_Detection
-2. 📦 Install Dependencies
-Install the required Python libraries from the requirements.txt file:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-3. 🧾 Project Structure & File Overview
-File/Folder	Description
-train_model.py	Script to train the emotion classification model
-app.py	Main Flask web application for emotion detection
-predict_emotion.py	Helper script to process input and predict emotion
-emotion_classifier.pkl	Pretrained model file (skip training if this exists)
-emotion_dataset_raw.csv	Dataset used for training the model
-
-4. 🧠 Train the Model (Optional)
-You can skip this step if emotion_classifier.pkl is already provided.
-
-To retrain the model:
-
-bash
-Copy
-Edit
-python train_model.py
-This will train a new classifier and save it as emotion_classifier.pkl.
-
-5. 🚀 Run the Web Application
-Start the Flask application:
-
-bash
-Copy
-Edit
-python app.py
-Once the server is running, open your browser and navigate to:
-
-cpp
-Copy
-Edit
-http://127.0.0.1:5000/
-6. 🧪 Using the Application
-Enter or upload text as instructed in the web interface.
-
-The app will display the predicted emotion based on your input.
-
-📸 Sample Interface
-Below are example screenshots from the application interface:
+Emotion_Detection/
+├── app.py # Main Flask application
+├── train_model.py # Script to train the emotion classifier
+├── predict_emotion.py # Helper for processing input and predicting emotion
+├── emotion_dataset_raw.csv # Dataset used for training
+├── emotion_classifier.pkl # Output model file (must be generated)
+├── requirements.txt # Required Python dependencies
+└── README.md # Project documentation
 
 
 
+![image](https://github.com/user-attachments/assets/1c58aba8-bf2e-4f5e-ad6d-ed2e0ab17060)
+
+Step 2: Install Dependencies
+Install the necessary Python libraries:
+![image](https://github.com/user-attachments/assets/360eb006-9550-4575-9e80-57ce839e135f)
+![image](https://github.com/user-attachments/assets/e808b29c-5055-4a0b-9ac1-de97a2c2717e)
+![image](https://github.com/user-attachments/assets/3c32dd6e-f443-4298-ad7c-9dc9d3384000)
+![image](https://github.com/user-attachments/assets/0e754146-0314-41d9-a956-70fc91568f32)
+![image](https://github.com/user-attachments/assets/e6140b4d-cb06-4913-89e1-66f4e7dbc002)
 
 
 
-🛠️ Troubleshooting Tips
-Make sure your Python version is compatible with the required packages.
-
-If any dependency fails, try upgrading pip or installing the packages individually.
