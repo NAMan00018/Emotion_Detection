@@ -4,16 +4,7 @@ A Flask-based web app that detects emotions in text using a machine learning mod
 
 ---
 
-## 📁 Project Structure
-
-Emotion_Detection/
-├── app.py # Main Flask application
-├── train_model.py # Script to train the emotion classifier
-├── predict_emotion.py # Helper for processing input and predicting emotion
-├── emotion_dataset_raw.csv # Dataset used for training
-├── emotion_classifier.pkl # Output model file (must be generated)
-├── requirements.txt # Required Python dependencies
-└── README.md # Project documentation
+![image](https://github.com/user-attachments/assets/903f6424-0ee9-495d-8f90-8e923a4fd6d0)
 
 
 
