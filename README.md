@@ -17,5 +17,8 @@ A Flask-based web app that detects emotions in text using a machine learning mod
 ![image](https://github.com/user-attachments/assets/0e754146-0314-41d9-a956-70fc91568f32)
 ![image](https://github.com/user-attachments/assets/e6140b4d-cb06-4913-89e1-66f4e7dbc002)
 
+DEMO LINK
+https://www.loom.com/share/1abaf6d6105f419aa9ab1b14d9ad3a0a?sid=e8556e5c-1b3f-4f09-b04b-35adfe99e41d
+
 
 
